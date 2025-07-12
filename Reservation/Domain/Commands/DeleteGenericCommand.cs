@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace Domain.Commands
 {
-    internal class DeleteGenericCommand
+    public class DeleteGenericCommand<T> : IRequest<Unit> where T : class
     {
+        public Guid Id { get; }
+
+        public DeleteGenericCommand(Guid id) => Id = id;
     }
 }

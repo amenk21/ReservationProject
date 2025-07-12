@@ -30,5 +30,9 @@ namespace Domain.Models
 
         [Required]
         public RoleUtilisateur Role { get; set; }
+
+
+
+        public bool IsDeleted { get; set; }
     }
 }

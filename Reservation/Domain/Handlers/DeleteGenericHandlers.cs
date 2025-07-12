@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Commands;
+using Domain.Interface;
+using MediatR;
 
-namespace Domain.Handlers
+public class DeleteGenericHandler<T> : IRequestHandler<DeleteGenericCommand<T>, Unit> where T : class
 {
-    internal class DeleteGenericHandlers
+    private readonly IGenericRepository<T> _repository;
+
+    public DeleteGenericHandler(IGenericRepository<T> repository) => _repository = repository;
+
+    public async Task<Unit> Handle(DeleteGenericCommand<T> request, CancellationToken cancellationToken)
     {
+        await _repository.DeleteAsync(request.Id);
+        return Unit.Value;
     }
 }

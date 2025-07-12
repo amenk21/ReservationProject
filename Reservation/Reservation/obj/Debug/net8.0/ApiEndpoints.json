@@ -71,5 +71,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.UtilisateurController",
+    "Method": "DeleteUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -65,6 +65,12 @@ namespace Reservation.Controllers
 
 
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUtilisateur(Guid id)
+        {
+            await _mediator.Send(new DeleteGenericCommand<Utilisateur>(id));
+            return NoContent();
+        }
 
 
 

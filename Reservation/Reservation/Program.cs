@@ -30,6 +30,9 @@ builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Utilisateur>, Ut
 builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Utilisateur>, IEnumerable<Utilisateur>>, GetGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Utilisateur>, Utilisateur>, GetByIdGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Utilisateur>, Utilisateur>, PutGenericHandler<Utilisateur>>();
+builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Utilisateur>, Unit>, DeleteGenericHandler<Utilisateur>>();
+
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
