@@ -12,3 +12,7 @@ C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\bin\Debug\net8.0\Domain.dll
+C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\bin\Debug\net8.0\Domain.pdb
+C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.sourcelink.json
+C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.csproj.Up2Date

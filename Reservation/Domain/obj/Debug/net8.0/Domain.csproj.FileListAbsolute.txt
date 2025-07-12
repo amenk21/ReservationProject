@@ -12,3 +12,4 @@ C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.sourcelink.json

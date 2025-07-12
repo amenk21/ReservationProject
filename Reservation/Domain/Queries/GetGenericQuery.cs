@@ -1,12 +1,9 @@
-﻿using System;
+﻿using MediatR;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Domain.Queries
 {
-    internal class GetGenericQuery
+    public class GetGenericQuery<T> : IRequest<IEnumerable<T>> where T : class
     {
     }
 }

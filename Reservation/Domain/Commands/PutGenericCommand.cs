@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace Domain.Commands
 {
-    internal class PutGenericCommand
+    public class PutGenericCommand<T> : IRequest<T> where T : class
     {
+        public Guid Id { get; }
+        public T UpdatedFields { get; }
+
+        public PutGenericCommand(Guid id, T updatedFields)
+        {
+            Id = id;
+            UpdatedFields = updatedFields;
+        }
     }
 }
