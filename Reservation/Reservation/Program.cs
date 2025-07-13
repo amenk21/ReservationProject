@@ -47,6 +47,14 @@ builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Salle>, Salle>
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Salle>, Salle>, PutGenericHandler<Salle>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Salle>, Unit>, DeleteGenericHandler<Salle>>();
 
+//Reservation 
+builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Reservations>, Reservations>, AddGenericHandler<Reservations>>();
+builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Reservations>, IEnumerable<Reservations>>, GetGenericHandler<Reservations>>();
+builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Reservations>, Reservations>, GetByIdGenericHandler<Reservations>>();
+builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Reservations>, Reservations>, PutGenericHandler<Reservations>>();
+builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Reservations>, Unit>, DeleteGenericHandler<Reservations>>();
+
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

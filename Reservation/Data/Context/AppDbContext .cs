@@ -18,5 +18,6 @@ namespace Data.Context
         public DbSet<Salle> Salles { get; set; }
 
         public DbSet<Filiale> Filiales { get; set; }
+        public DbSet<Reservations> Reservations { get; set; }
     }
 }
