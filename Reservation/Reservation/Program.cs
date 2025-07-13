@@ -6,6 +6,7 @@ using Domain.Commands;
 using Domain.Models;
 using Data.Context;
 using Domain.Queries;
+using Domain.Models.Domain.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,12 +26,20 @@ builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(AddGenericHandler<>).Assembly);
 });
 
+
 builder.Services.AddScoped(typeof(Domain.Interface.IGenericRepository<>), typeof(Data.Repositories.GenericRepository<>));
+//Utilisateur
 builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Utilisateur>, Utilisateur>, AddGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Utilisateur>, IEnumerable<Utilisateur>>, GetGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Utilisateur>, Utilisateur>, GetByIdGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Utilisateur>, Utilisateur>, PutGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Utilisateur>, Unit>, DeleteGenericHandler<Utilisateur>>();
+//Filiale
+builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Filiale>, Filiale>, AddGenericHandler<Filiale>>();
+builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Filiale>, IEnumerable<Filiale>>, GetGenericHandler<Filiale>>();
+builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Filiale>, Filiale>, GetByIdGenericHandler<Filiale>>();
+builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Filiale>, Filiale>, PutGenericHandler<Filiale>>();
+builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Filiale>, Unit>, DeleteGenericHandler<Filiale>>();
 
 
 

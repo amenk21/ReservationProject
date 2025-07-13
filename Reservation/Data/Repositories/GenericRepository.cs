@@ -21,10 +21,10 @@ namespace Data.Repositories
         public async Task<T> GetByIdAsync(Guid id)
             => await _dbSet.FindAsync(id);
 
-        public async Task<IEnumerable<T>> GetAllAsync()
-            => await _dbSet.ToListAsync();
-
         /*public async Task<IEnumerable<T>> GetAllAsync()
+            => await _dbSet.ToListAsync();*/
+
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
             var query = _context.Set<T>().AsQueryable();
 
@@ -36,7 +36,7 @@ namespace Data.Repositories
             }
 
             return await query.ToListAsync();
-        }*/
+        }
 
 
         public async Task<T> AddAsync(T entity)

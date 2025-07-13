@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Domain.Models.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,6 @@ namespace Data.Context
             : base(options) { }
 
         public DbSet<Utilisateur> Utilisateurs { get; set; }
+        public DbSet<Filiale> Filiales { get; set; }
     }
 }

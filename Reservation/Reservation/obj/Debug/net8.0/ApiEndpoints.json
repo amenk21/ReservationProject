@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "Reservation.Controllers.FilialeController",
+    "Method": "AddFiliale",
+    "RelativePath": "api/Filiale",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filiale",
+        "Type": "Domain.Models.Domain.Models.Filiale",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.FilialeController",
+    "Method": "GetAllFiliales",
+    "RelativePath": "api/Filiale",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.FilialeController",
+    "Method": "GetFilialeById",
+    "RelativePath": "api/Filiale/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.FilialeController",
+    "Method": "UpdateFiliale",
+    "RelativePath": "api/Filiale/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Domain.DTOs.FilialeUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.FilialeController",
+    "Method": "DeleteFiliale",
+    "RelativePath": "api/Filiale/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Reservation.Controllers.UtilisateurController",
     "Method": "AddUtilisateur",
     "RelativePath": "api/Utilisateur",
