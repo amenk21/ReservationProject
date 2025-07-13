@@ -7,6 +7,8 @@ using Domain.Models;
 using Data.Context;
 using Domain.Queries;
 using Domain.Models.Domain.Models;
+using Domain.Commands.UtilisateurCommands;
+using Domain.Handlers.UtilisateurHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +36,8 @@ builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Utilisateur>, IEnu
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Utilisateur>, Utilisateur>, GetByIdGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Utilisateur>, Utilisateur>, PutGenericHandler<Utilisateur>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Utilisateur>, Unit>, DeleteGenericHandler<Utilisateur>>();
+builder.Services.AddTransient<IRequestHandler<LoginUtilisateurCommand, Utilisateur?>, LoginUtilisateurHandler>();
+
 //Filiale
 builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Filiale>, Filiale>, AddGenericHandler<Filiale>>();
 builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Filiale>, IEnumerable<Filiale>>, GetGenericHandler<Filiale>>();

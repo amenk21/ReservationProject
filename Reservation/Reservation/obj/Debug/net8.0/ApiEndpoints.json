@@ -324,5 +324,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.UtilisateurController",
+    "Method": "Login",
+    "RelativePath": "api/Utilisateur/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Domain.Commands.UtilisateurCommands.LoginUtilisateurCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

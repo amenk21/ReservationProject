@@ -1,4 +1,5 @@
 ﻿using Domain.Commands;
+using Domain.Commands.UtilisateurCommands;
 using Domain.Models;
 using Domain.Queries;
 using MediatR;
@@ -71,8 +72,24 @@ namespace Reservation.Controllers
             await _mediator.Send(new DeleteGenericCommand<Utilisateur>(id));
             return NoContent();
         }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginUtilisateurCommand command)
+        {
+            var user = await _mediator.Send(command);
+
+            if (user == null)
+                return Unauthorized("Email ou mot de passe incorrect.");
+
+            return Ok(new
+            {
+                user.Id,
+                user.Nom,
+                user.Email,
+                user.Role
+            });
+        }
+    
 
 
-
-    }
+}
 }
