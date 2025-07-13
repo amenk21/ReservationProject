@@ -40,7 +40,12 @@ builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Filiale>, IEnumera
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Filiale>, Filiale>, GetByIdGenericHandler<Filiale>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Filiale>, Filiale>, PutGenericHandler<Filiale>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Filiale>, Unit>, DeleteGenericHandler<Filiale>>();
-
+//Salle
+builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Salle>, Salle>, AddGenericHandler<Salle>>();
+builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Salle>, IEnumerable<Salle>>, GetGenericHandler<Salle>>();
+builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Salle>, Salle>, GetByIdGenericHandler<Salle>>();
+builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Salle>, Salle>, PutGenericHandler<Salle>>();
+builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Salle>, Unit>, DeleteGenericHandler<Salle>>();
 
 
 builder.Services.AddEndpointsApiExplorer();

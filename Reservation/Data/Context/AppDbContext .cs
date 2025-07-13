@@ -15,6 +15,8 @@ namespace Data.Context
             : base(options) { }
 
         public DbSet<Utilisateur> Utilisateurs { get; set; }
+        public DbSet<Salle> Salles { get; set; }
+
         public DbSet<Filiale> Filiales { get; set; }
     }
 }
