@@ -1,9 +1,11 @@
-﻿using Domain.Commands;
+﻿using Data.Context;
+using Domain.Commands;
 using Domain.Commands.UtilisateurCommands;
 using Domain.Models;
 using Domain.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace Reservation.Controllers
@@ -13,23 +15,29 @@ namespace Reservation.Controllers
     public class UtilisateurController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly AppDbContext _context;
 
-        public UtilisateurController(IMediator mediator)
+        public UtilisateurController(IMediator mediator, AppDbContext context)
         {
             _mediator = mediator;
+            _context = context;
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddUtilisateur( Utilisateur utilisateur)
+        public async Task<IActionResult> AddUtilisateur(Utilisateur utilisateur)
         {
             if (utilisateur == null)
                 return BadRequest("Utilisateur is null.");
 
+            var existingUser = await _context.Utilisateurs
+                .FirstOrDefaultAsync(u => u.Email == utilisateur.Email);
+
+            if (existingUser != null)
+                return Conflict("Cet email existe déjà.");
             var command = new AddGenericCommand<Utilisateur>(utilisateur);
             var result = await _mediator.Send(command);
-            return Ok(result); // returns the saved user
+            return Ok(result);
         }
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Utilisateur>>> GetAllUtilisateurs()
         {
