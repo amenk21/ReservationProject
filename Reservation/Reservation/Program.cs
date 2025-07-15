@@ -59,7 +59,17 @@ builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Reservations>, R
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Reservations>, Unit>, DeleteGenericHandler<Reservations>>();
 
 
-
+//CORS 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -79,8 +89,8 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseCors("AllowAll");
 app.UseAuthorization();
-
 app.MapRazorPages();
 app.MapControllers();
 
