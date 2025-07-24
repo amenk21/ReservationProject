@@ -4984,19 +4984,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\msi\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Data\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\msi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5011,8 +5011,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Domain\\Domain.csproj"
+            "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Domain\\Domain.csproj"
             }
           }
         }

@@ -2986,19 +2986,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\msi\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msi\\Desktop\\STAGE POLINA\\Polina_Project\\ReservationProject\\Reservation\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Stage_POLINA\\ReservationProject\\Reservation\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\msi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

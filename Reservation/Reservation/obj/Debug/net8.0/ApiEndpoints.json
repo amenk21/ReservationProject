@@ -237,6 +237,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Reservation.Controllers.SalleController",
+    "Method": "GetSallesByFilialeId",
+    "RelativePath": "api/Salle/filiale/{filialeId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filialeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Reservation.Controllers.UtilisateurController",
     "Method": "AddUtilisateur",
     "RelativePath": "api/Utilisateur",

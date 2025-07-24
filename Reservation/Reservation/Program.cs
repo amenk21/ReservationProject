@@ -13,8 +13,9 @@ using Domain.Handlers.UtilisateurHandlers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
-        ?? "Server=localhost;Database=ReservationDb;Trusted_Connection=True;TrustServerCertificate=True;"));
+    options.UseSqlServer("Data Source=DESKTOP-9BEID0U\\AA;Initial Catalog=ReservationDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"
+));
+
 
 builder.Services.AddRazorPages();
 
@@ -50,6 +51,8 @@ builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Salle>, IEnumerabl
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Salle>, Salle>, GetByIdGenericHandler<Salle>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Salle>, Salle>, PutGenericHandler<Salle>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Salle>, Unit>, DeleteGenericHandler<Salle>>();
+builder.Services.AddTransient<IRequestHandler<GetSalleByFilialeIdQuery, List<Salle>>, GetSalleByFilialeIdHandler>();
+
 
 //Reservation 
 builder.Services.AddTransient<IRequestHandler<AddGenericCommand<Reservations>, Reservations>, AddGenericHandler<Reservations>>();

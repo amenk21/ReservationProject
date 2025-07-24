@@ -16,3 +16,21 @@ C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\bin\Debug\net8.0\Domain.pdb
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.sourcelink.json
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Data.deps.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Data.runtimeconfig.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Data.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Data.pdb
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Domain.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\bin\Debug\net8.0\Domain.pdb
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.sourcelink.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\refint\Data.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.pdb
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Data\obj\Debug\net8.0\ref\Data.dll

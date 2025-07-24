@@ -56,5 +56,11 @@ namespace Reservation.Controllers
             await _mediator.Send(new DeleteGenericCommand<Salle>(id));
             return NoContent();
         }
+        [HttpGet("filiale/{filialeId}")]
+        public async Task<IActionResult> GetSallesByFilialeId(Guid filialeId)
+        {
+            var result = await _mediator.Send(new GetSalleByFilialeIdQuery(filialeId));
+            return Ok(result);
+        }
     }
 }

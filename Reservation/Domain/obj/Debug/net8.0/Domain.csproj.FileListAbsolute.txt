@@ -13,3 +13,18 @@ C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\msi\Desktop\STAGE POLINA\Polina_Project\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Stage_POLINA\ReservationProject\Reservation\Domain\obj\Debug\net8.0\ref\Domain.dll
