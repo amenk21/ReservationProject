@@ -11,10 +11,15 @@ using Domain.Commands.UtilisateurCommands;
 using Domain.Handlers.UtilisateurHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//KTHIRI
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
+        ?? "Server=localhost;Database=ReservationDb;Trusted_Connection=True;TrustServerCertificate=True;"));
+//GAFSI
+/*
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer("Data Source=DESKTOP-9BEID0U\\AA;Initial Catalog=ReservationDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"
-));
+));*/
 
 
 builder.Services.AddRazorPages();
