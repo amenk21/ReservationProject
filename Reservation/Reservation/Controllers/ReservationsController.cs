@@ -5,6 +5,7 @@ using Domain.DTO;
 using Domain.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Domain.Commands.ReservationsCommands;
 
 namespace Reservation.Controllers
 {
@@ -20,12 +21,19 @@ namespace Reservation.Controllers
         }
 
         // POST: api/Reservations
+        /* [HttpPost]
+         public async Task<IActionResult> AddReservation([FromBody] Reservations reservation)
+         {
+             var result = await _mediator.Send(new AddGenericCommand<Reservations>(reservation));
+             return Ok(result);
+         }*/
         [HttpPost]
         public async Task<IActionResult> AddReservation([FromBody] Reservations reservation)
         {
-            var result = await _mediator.Send(new AddGenericCommand<Reservations>(reservation));
+            var result = await _mediator.Send(new AddReservationCommand(reservation));
             return Ok(result);
         }
+
 
         // GET: api/Reservations
         [HttpGet]
@@ -70,5 +78,26 @@ namespace Reservation.Controllers
             await _mediator.Send(new DeleteGenericCommand<Reservations>(id));
             return NoContent();
         }
+
+        [HttpPut("changer-statut")]
+        public async Task<IActionResult> ChangerStatut([FromBody] ChangeReservationsStatusCommand command)
+        {
+            if (command == null)
+                return BadRequest("Commande invalide.");
+
+            var result = await _mediator.Send(command);
+
+            if (result == null)
+                return NotFound("Réservation non trouvée ou erreur de mise à jour.");
+
+            return Ok(result);
+        }
+
+
+
+
+
+
+
     }
 }

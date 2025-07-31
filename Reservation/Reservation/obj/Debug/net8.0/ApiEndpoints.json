@@ -158,6 +158,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Reservation.Controllers.ReservationsController",
+    "Method": "ChangerStatut",
+    "RelativePath": "api/Reservations/changer-statut",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Domain.Commands.ReservationsCommands.ChangeReservationsStatusCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Reservation.Controllers.SalleController",
     "Method": "AddSalle",
     "RelativePath": "api/Salle",

@@ -9,6 +9,8 @@ using Domain.Queries;
 using Domain.Models.Domain.Models;
 using Domain.Commands.UtilisateurCommands;
 using Domain.Handlers.UtilisateurHandlers;
+using Data.Handlers.ReservationsHandlers;
+using Domain.Commands.ReservationsCommands;
 
 var builder = WebApplication.CreateBuilder(args);
 //KTHIRI
@@ -65,6 +67,10 @@ builder.Services.AddTransient<IRequestHandler<GetGenericQuery<Reservations>, IEn
 builder.Services.AddTransient<IRequestHandler<GetByIdGenericQuery<Reservations>, Reservations>, GetByIdGenericHandler<Reservations>>();
 builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Reservations>, Reservations>, PutGenericHandler<Reservations>>();
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Reservations>, Unit>, DeleteGenericHandler<Reservations>>();
+builder.Services.AddTransient<IRequestHandler<ChangeReservationsStatusCommand, Reservations?>, ChangeReservationStatusHandler>();
+builder.Services.AddTransient<IRequestHandler<AddReservationCommand, Reservations>, AddReservationHandler>();
+
+
 
 
 //CORS 
