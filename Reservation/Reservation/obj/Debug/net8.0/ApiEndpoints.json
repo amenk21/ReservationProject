@@ -159,6 +159,22 @@
   },
   {
     "ContainingType": "Reservation.Controllers.ReservationsController",
+    "Method": "GetReservationsBySalleId",
+    "RelativePath": "api/Reservations/by-salle/{salleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "salleId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Reservation.Controllers.ReservationsController",
     "Method": "ChangerStatut",
     "RelativePath": "api/Reservations/changer-statut",
     "HttpMethod": "PUT",

@@ -93,7 +93,12 @@ namespace Reservation.Controllers
             return Ok(result);
         }
 
-
+        [HttpGet("by-salle/{salleId}")]
+        public async Task<IActionResult> GetReservationsBySalleId(Guid salleId)
+        {
+            var result = await _mediator.Send(new GetReservationsBySalleIdQuery(salleId));
+            return Ok(result);
+        }
 
 
 

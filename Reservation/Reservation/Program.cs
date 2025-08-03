@@ -69,7 +69,7 @@ builder.Services.AddTransient<IRequestHandler<PutGenericCommand<Reservations>, R
 builder.Services.AddTransient<IRequestHandler<DeleteGenericCommand<Reservations>, Unit>, DeleteGenericHandler<Reservations>>();
 builder.Services.AddTransient<IRequestHandler<ChangeReservationsStatusCommand, Reservations?>, ChangeReservationStatusHandler>();
 builder.Services.AddTransient<IRequestHandler<AddReservationCommand, Reservations>, AddReservationHandler>();
-
+builder.Services.AddTransient<IRequestHandler<GetReservationsBySalleIdQuery, List<Reservations>>, GetReservationsBySalleIdHandler>();
 
 
 
